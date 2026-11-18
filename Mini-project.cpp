@@ -16,6 +16,7 @@ void upload(vector<unique_ptr<SmartDevice>>& d);
 int main() {
 	bool menu = true;
 	int func;
+	cout << "repo oke roi na";
 	while (menu) {
 		cout <<endl<< "------|Smart Devices Manager|------" << endl << "Welcome back! What do you want?" << endl;
 		cout << "1. Add devices\n2. Show devices list\n3. Toggle device\n4. Save devices file\n5. Upload devices file\n6. Leave\n";
