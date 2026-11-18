@@ -13,5 +13,9 @@ public:
 	}
 	double calculatePowerCost(int hours) const override;
 	void displayDetails() const override;
+	std::string getType() const override {
+		return "AC";
+	}
+	std::string getExtra() const override;
 	SmartAC(std::string ID, std::string Name, bool stat, int Temp) : SmartDevice(ID, Name, stat), temp(Temp) {}
 };

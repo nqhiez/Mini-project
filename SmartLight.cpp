@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "SmartLight.h"
 using namespace std;
 void SmartLight::displayDetails() const {
@@ -7,3 +8,4 @@ void SmartLight::displayDetails() const {
 double SmartLight::calculatePowerCost(int hours) const {
 	return (hours * 0.015 * (brightness / 100.0) * 3000);
 }
+string SmartLight::getExtra() const { return to_string(brightness); }

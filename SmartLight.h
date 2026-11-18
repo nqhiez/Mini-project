@@ -18,5 +18,9 @@ public:
 	}
 	void displayDetails() const override;
 	double calculatePowerCost(int hours) const override;
+	std::string getType() const override {
+		return "Light";
+	}
+	std::string getExtra() const override;
 	SmartLight(std::string ID, std::string Name, bool stat, int bright = 0) : SmartDevice(ID, Name, stat), brightness(bright){}
 };

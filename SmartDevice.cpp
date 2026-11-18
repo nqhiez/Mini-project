@@ -9,6 +9,9 @@ void SmartDevice::togglePower() {
 		isOn = false;
 	}
 }
+string SmartDevice::getName() const {
+	return name;
+}
 string SmartDevice::getId() const {
 	return id;
 }
